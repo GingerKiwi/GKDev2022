@@ -23,6 +23,7 @@
 }
 
 :root {
+    --font-size-xsmall: 1.2rem;
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
     --font-size-medium: 2.8rem;
@@ -175,6 +176,12 @@ h3 {
 
 p {
     margin: var(--gutter-small) 0;
+}
+
+#italic {
+    font-style: italic;
+    /* text-transform: uppercase; */
+    font-size: var(--font-size-medium);
 }
 
 @media(max-width: 900px) {
@@ -505,31 +512,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
