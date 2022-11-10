@@ -523,6 +523,10 @@ body:not(.user-is-tabbing) a:focus {
     align-items: center;
 }
 
+.about__photo {
+    border-radius: 50%;
+}
+
 @media(max-width: 900px) {
     .about__content {
         flex-direction: column-reverse;
